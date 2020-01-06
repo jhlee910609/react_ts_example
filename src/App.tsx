@@ -1,10 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
-import React, {
-  Component,
-  ReactNode,
-  useState,
-  DetailsHTMLAttributes
-} from "react";
+import React, { Component, ReactNode } from "react";
 
 const Header: React.FC = () => {
   return (
@@ -137,7 +132,17 @@ class LeftMenu extends Component<ILeftMenuProps, ILeftMenuState> {
 
 const RightMenu: React.FC = () => {
   return (
-    <div style={{ flex: "1", backgroundColor: "red", height: "100%" }}></div>
+    <div style={{ flex: "1", backgroundColor: "red", height: "100%" }}>
+      <img
+        src="https://i.ytimg.com/vi/PQq_rAtkzmU/maxresdefault.jpg"
+        alt="img"
+        width="100px"
+        height="100px"
+      />
+      <a href="javascript:;" onClick={() => alert("hi")}>
+        하이하이!
+      </a>
+    </div>
   );
 };
 
